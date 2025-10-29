@@ -13,6 +13,9 @@ export default function News() {
           {t({ JP: '5. ニュース', EN: '5. News' })}
         </span>
       </div>
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+            {t({ JP: '最新ニュース一覧', EN: 'Latest News List' })}
+          </h2>
       <div className="w-[95%] lg:max-w-[1200px] mx-auto px-4">
         <div className="border-2 border-green-500 rounded-lg bg-green-500/5 p-8 lg:p-12">
           <div className="flex flex-col gap-7">
