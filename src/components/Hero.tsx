@@ -80,8 +80,8 @@ export default function Hero() {
           <div className="space-y-3">
             <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
               {t({
-                JP: '35億年前の地球のはじまりの生命',
-                EN: 'Life from the beginning of Earth 3.5 billion years ago'
+                JP: '35億年前の地球のはじまりの植物',
+                EN: 'The Plant from 3.5 billion years ago'
               })}
             </p>
             <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
@@ -93,7 +93,7 @@ export default function Hero() {
             <p className="text-lg md:text-xl text-[#4ade80] leading-relaxed">
               {t({
                 JP: '地球が生み出した生命力を、あなたに。',
-                EN: 'Bringing you the life force created by Earth.'
+                EN: 'Earth’s life force, for you.'
               })}
             </p>
           </div>
