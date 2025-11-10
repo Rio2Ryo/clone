@@ -8,15 +8,13 @@ import IndustryApproach from '@/components/IndustryApproach'
 import TeamMembers from '@/components/TeamMembers'
 import Partners from '@/components/Partners'
 import TokenInfo from '@/components/TokenInfo'
-import News from '@/components/News'
 import Footer from '@/components/Footer'
 import LoadingScreen from '@/components/LoadingScreen'
 
-export default function Home() {
+export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate initial loading
     const timer = setTimeout(() => {
       setIsLoading(false)
     }, 1500)
@@ -35,10 +33,9 @@ export default function Home() {
         <TeamMembers />
         <Partners />
         <TokenInfo />
-        <News />
-        {/*<FAQ />*/}
         <Footer />
       </main>
     </>
   )
 }
+
