@@ -76,13 +76,13 @@ the following can be created:`
 
                 <div className="space-y-2">
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '①食品', EN: '①Food' })}</p>
-                  <p className="text-white text-sm md:text-base">{t({ JP: '1つの生命体から人類に必要な48種類の栄養素を含む食品。', EN: 'Food containing 48 types of nutrients necessary for humanity from a single life form' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '1つの生命体から人類に必要な48種類の栄養素を含む食品。', EN: 'Food containing 48 types of nutrients necessary for humanity from a single life form.' })}</p>
 
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '②スキンケア', EN: '②Skincare' })}</p>
-                  <p className="text-white text-sm md:text-base">{t({ JP: '皮膚の再生に効果のあるスキンケア。', EN: 'Skincare products effective for skin regeneration' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '皮膚の再生に効果のあるスキンケア。', EN: 'Skincare products effective for skin regeneration.' })}</p>
 
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '③魚貝類の養殖', EN: '③Aquaculture' })}</p>
-                  <p className="text-white text-sm md:text-base">{t({ JP: '化学物質を一切使用しない高タンパク質の魚貝類の養殖。', EN: 'Aquaculture of high-protein fish and shellfish without using any chemicals' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: '化学物質を一切使用しない高タンパク質の魚貝類の養殖。', EN: 'Aquaculture of high-protein fish and shellfish without using any chemicals.' })}</p>
                 </div>
               </div> 
              
@@ -128,24 +128,24 @@ the following can be created:`
 
                 <div className="space-y-2">
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '①Carbon Rebirth', EN: '①Carbon Rebirth' })}</p>
-                  <p className="text-white mb-3 text-sm md:text-base">{t({ JP: 'マザーベジタブル生産によるCO2の吸収（天然スギの700倍）およびO2の排出により小さな地球を再現。', EN: 'Recreating a small Earth through CO2 absorption (700 times that of natural cedar) and O2 emission by Mother Vegetable production' })}</p>
+                  <p className="text-white mb-3 text-sm md:text-base">{t({ JP: 'マザーベジタブル生産によるCO2の吸収（天然スギの700倍）およびO2の排出により小さな地球を再現。', EN: 'Recreating a small Earth through CO2 absorption (700 times that of natural cedar) and O2 emission by Mother Vegetable production.' })}</p>
 
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '②ZERO Carbon Energy', EN: '②ZERO Carbon Energy' })}</p>
-                  <p className="text-white mb-3 text-sm md:text-base">{t({ JP: '外部電力、化石燃料などCO2を排出するエネルギーを一切使用しなく、小さな地球を再現。', EN: 'Recreating a small Earth without using any CO2-emitting energy such as external electricity and fossil fuels' })}</p>
+                  <p className="text-white mb-3 text-sm md:text-base">{t({ JP: '外部電力、化石燃料などCO2を排出するエネルギーを一切使用しなく、小さな地球を再現。', EN: 'Recreating a small Earth without using any CO2-emitting energy such as external electricity and fossil fuels.' })}</p>
 
                   <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '③カーボンクレジットの試算表', EN: '③Carbon Credit Estimation Table' })}</p>
-                  <p className="text-white text-sm md:text-base">{t({ JP: 'SEF 1 unit / 26m x 16m x 10階建 は面積にすると約0.5 ヘクタールとなる。', EN: 'SEF 1 unit / 26m x 16m x 10 layers has an area of approximately 0.5 hectares' })}</p>
+                  <p className="text-white text-sm md:text-base">{t({ JP: 'SEF 1 unit / 26m x 16m x 10階建 は面積にすると約0.5 ヘクタールとなる。', EN: 'SEF 1 unit / 26m x 16m x 10 layers has an area of approximately 0.5 hectares.' })}</p>
                 
                 <p className="leading-relaxed text-sm md:text-base whitespace-pre-line">
                     {t({
                       JP: `一般的な0.5ヘクタールの天然スギのCO2吸収量は年間約4ton\nSEFはその700倍のCO2吸収量により年間約2,800tonとなる。`,
-                      EN: `A typical 0.5 hectare natural cedar forest absorbs approximately 4 tons of CO2 per year\nSEF absorbs 700 times more CO2, resulting in approximately 2,800 tons per year`
+                      EN: `A typical 0.5 hectare natural cedar forest absorbs approximately 4 tons of CO2 per year\nSEF absorbs 700 times more CO2, resulting in approximately 2,800 tons per year.`
                     })}
                   </p>
                   <p className="leading-relaxed text-sm md:text-base whitespace-pre-line">
                     {t({
                       JP: `一般的なカーボンクレジットの価格は1tonあたり約4,000円\nSEFは2,800ton x 4,000円 = 11,200,000円 / 年 の収益性がある。`,
-                      EN: `The typical carbon credit price is approximately 4,000 yen per ton\nSEF has profitability of 2,800 tons x 4,000 yen = 11,200,000 yen / year`
+                      EN: `The typical carbon credit price is approximately 4,000 yen per ton\nSEF has profitability of 2,800 tons x 4,000 yen = 11,200,000 yen / year.`
                     })}
                   </p>
 
