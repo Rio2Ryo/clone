@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-black">
-       <div className="container rounded-xl px-8 py-14 mb-16 mx-auto">
+       <div className="container rounded-xl px-8 py-14 mb-1 mx-auto">
          {/* Decorative underline */}
         <div className="w-full h-1 bg-gradient-to-r from-transparent via-[#25C760] to-transparent mx-auto mb-16"></div>
         {/* Logo */}
