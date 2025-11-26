@@ -229,7 +229,7 @@ we offer the following three types of Mother Vegetable products:`
                       )}
                     </p>
 
-                    <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '②ZERO Carbon Energy', EN: '②ZERO Carbon Energy' })}</p>
+                    <p className="text-green-400 font-semibold text-sm md:text-base">{t({ JP: '②ZERO Emission', EN: '②ZERO Emission' })}</p>
                     <p className="text-white mb-3 text-sm md:text-base">
                       {language === 'JP' ? (
                         <>外部電力、化石燃料などCO<sub>2</sub>を排出するエネルギーを一切使用しなく、小さな地球を再現。</>
