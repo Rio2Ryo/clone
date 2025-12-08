@@ -3,6 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // 末尾スラッシュ付け（/athlete → /athlete/）
+      {
+        source: "/athlete",
+        destination: "/athlete/",
+        permanent: false, // 302
+      },
       // mothervegetables.org（apex）→ www.mothervegetable.org
       {
         source: "/:path*",
@@ -53,9 +59,10 @@ const nextConfig: NextConfig = {
       },
 
       // ★ 追加: /athlete → mvathletefoundation.vercel.app
+      // 末尾スラッシュありを明示的に追加（Viteのbase設定と整合させるため）
       {
-        source: "/athlete",
-        destination: "https://mvathletefoundation.vercel.app/athlete",
+        source: "/athlete/",
+        destination: "https://mvathletefoundation.vercel.app/athlete/",
       },
       {
         source: "/athlete/:path*",
