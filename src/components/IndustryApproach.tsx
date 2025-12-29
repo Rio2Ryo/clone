@@ -4,7 +4,7 @@ export default function IndustryApproach() {
   const products = [
     {
       id: 1,
-      video: '/product1.mp4',
+      video: '/achieve_video.mp4',
       title: 'Achieve',
       subtitle: 'for Body',
       label: "'TORIKOMU'",
@@ -19,7 +19,7 @@ export default function IndustryApproach() {
     },
     {
       id: 2,
-      video: '/product2.mp4',
+      video: '/confidence_v2.mp4',
       title: 'Confidence',
       subtitle: 'for Skin',
       label: "'MAZEKOMU'",
@@ -34,7 +34,7 @@ export default function IndustryApproach() {
     },
     {
       id: 3,
-      video: '/product3.mp4',
+      video: '/forever_video.mp4',
       title: 'Forever',
       subtitle: 'forستyle',
       label: "'SURIKOMU'",
@@ -124,21 +124,7 @@ export default function IndustryApproach() {
                 </p>
               </div>
 
-              {/* Buttons */}
-              <div className="mt-auto space-y-3 text-center">
-                <a
-                  href={product.detailLink}
-                  className="block py-2 px-4 rounded text-sm text-green-400 border border-green-400 hover:bg-green-400/10 transition"
-                >
-                  詳細を見る
-                </a>
-                <a
-                  href={product.shopLink}
-                  className="inline-flex items-center text-green-400 text-sm hover:underline"
-                >
-                  ショップ <span className="ml-1">→</span>
-                </a>
-              </div>
+         
             </div>
           ))}
         </div>
