@@ -17,11 +17,10 @@ export default function IndustryApproach() {
   ]
 
   return (
-    <section className="py-20 bg-black">
+    <section className="py-10 md:py-20 bg-black">
       <div
-        className="mx-auto px-8 py-12"
+        className="mx-auto px-4 md:px-8 py-8 md:py-12 w-[97%] md:w-[90%]"
         style={{
-          width: '90%',
           maxWidth: '1500px',
           border: '2px solid #25c760',
           borderRadius: '8px',
@@ -29,33 +28,33 @@ export default function IndustryApproach() {
       >
         {/* Title */}
         <h2
-          className="text-4xl md:text-5xl font-bold text-center mb-4"
+          className="text-2xl md:text-5xl font-bold text-center mb-2 md:mb-4"
           style={{ color: '#25c760' }}
         >
           Our Trust
         </h2>
 
-       <div className="w-40 md:w-48 h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-6 mb-12 opacity-80"></div>
+        <div className="w-32 md:w-48 h-1 md:h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-4 md:mt-6 mb-6 md:mb-12 opacity-80"></div>
 
         {/* Certification Logos */}
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-12">
+        <div className="flex justify-center items-center gap-2 md:gap-10 mb-6 md:mb-12">
           {certifications.map((cert) => (
             <img
               key={cert.id}
               src={cert.src}
               alt={cert.alt}
-              className="h-20 md:h-24 w-auto object-contain"
+              className="h-10 md:h-24 w-auto object-contain"
             />
           ))}
         </div>
 
         {/* Trust Text */}
-        <div className="space-y-1 text-center">
+        <div className="space-y-3 md:space-y-1 text-center">
           {trustItems.map((item, index) => (
-            <p key={index} className="text-sm md:text-base">
-              <span className="text-green-400 font-semibold mr-4">{item.label}</span>
-              <span className="text-gray-300">{item.text}</span>
-            </p>
+            <div key={index} className="text-xs md:text-base">
+              <p className="text-green-400 font-semibold md:inline md:mr-4">{item.label}</p>
+              <p className="text-gray-300 md:inline">{item.text}</p>
+            </div>
           ))}
         </div>
       </div>
