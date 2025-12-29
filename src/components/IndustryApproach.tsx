@@ -91,7 +91,7 @@ export default function IndustryApproach() {
                   loop
                   muted
                   playsInline
-                  className="w-32 md:w-40 h-44 md:h-52 object-cover rounded-lg"
+                  className="w-28 md:w-36 h-44 md:h-52 object-cover rounded-lg"
                 />
               </div>
 
@@ -99,16 +99,16 @@ export default function IndustryApproach() {
               <h3 className="text-2xl md:text-3xl font-bold text-center" style={{ color: '#25c760' }}>
                 {product.title}
               </h3>
-              <p className="text-gray-400 text-sm text-center mb-3">{product.subtitle}</p>
+              <p className="text-red-600 text-sm text-center mb-3">{product.subtitle}</p>
 
               {/* Label & Description */}
               <p className="text-red-600 font-semibold text-center text-sm">{product.label}</p>
-              <p className="text-red-600 text-center text-xs md:text-sm mb-4">{product.description}</p>
+              <p className="text-white text-center text-xs md:text-sm mb-4">{product.description}</p>
 
               {/* Features */}
               <div className="space-y-2 mb-4">
                 {product.features.map((feature, idx) => (
-                  <p key={idx} className="text-gray-300 text-base md:text-sm flex items-start">
+                  <p key={idx} className="text-gray-300 text-xl md:text-sm flex items-start">
                     <span className="text-green-400 mr-2">✓</span>
                     {feature}
                   </p>
@@ -116,8 +116,8 @@ export default function IndustryApproach() {
               </div>
 
               {/* How to use */}
-              <div className="mb-4">
-                <p className="text-green-400 font-semibold text-base mb-1">How to use</p>
+              <div className="mt-10 mb-4">
+                <p className="text-green-400 font-semibold text-xl mb-1">How to use</p>
                 <p className="text-gray-300 text-xs md:text-sm flex items-start">
                   <span className="text-green-400 mr-2">✓</span>
                   {product.howToUse}
