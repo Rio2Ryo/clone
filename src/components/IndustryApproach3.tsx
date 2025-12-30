@@ -1,0 +1,156 @@
+'use client'
+
+export default function IndustryApproach() {
+  const nutrients = [
+    { name: 'ミネラル', count: '9種類' },
+    { name: 'ビタミン', count: '10種類' },
+    { name: 'アミノ酸', count: '18種類' },
+    { name: '脂肪酸', count: '3種類' },
+    { name: 'その他機能性成分', count: '9種類' },
+  ]
+
+  const nutrientsList = 'カリウム・ナトリウム・マグネシウム・カルシウム・リン・鉄・マンガン・亜鉛・銅・ビタミンA・B1・B2・B3・B5・B6・B9・C・E・K・トリプトファン・スレオニン・ロイシン・イソロイシン・リシン・メチオニン・フェニルアラニン・バリン・ヒスチジン・アルギニン・システイン・チロシン・アラニン・アスパラギン酸・グルタミン酸・セリン・グリシン・プロリン・飽和脂肪酸・オメガ3脂肪酸・オメガ6脂肪酸・C-フィコシアニン・クロロフィルa・総カロテノイド・核酸・スピルラン・グリコーゲン様多糖・β-グルカン様多糖・セルロース'
+
+  const categories = [
+    {
+      title: 'チルドレン',
+      image: '/silhouette_children.png',
+      benefits: ['集中力向上', '学習能力向上', '骨の成長サポート', '免疫力向上', '食欲向上'],
+    },
+    {
+      title: 'アダルト',
+      image: '/silhouette_adult.png',
+      benefits: ['便秘・消化不良改善', '睡眠の質向上', '疲れの軽減', '細胞老化・炎症の抑制', 'ダイエット'],
+    },
+    {
+      title: 'シニア',
+      image: '/silhouette_senior.png',
+      benefits: ['睡眠の質向上', '血液循環の改善', '食欲向上・栄養補給', '内臓機能のサポート'],
+    },
+    {
+      title: 'アスリート',
+      image: '/silhouette_athlete.png',
+      benefits: ['添加物のデトックス', '筋肉疲労回復・持続力向上', '効率的な栄養補給', '炎症回復・抑制', 'トレーニング効果の向上'],
+    },
+    {
+      title: 'ドッグ',
+      image: '/silhouette_dog.png',
+      benefits: ['涙やけの改善', '糞尿のにおい改善', '食欲増強', '腸内環境の改善', '深い睡眠', '体臭改善'],
+    },
+    {
+      title: 'キャット',
+      image: '/silhouette_cat.png',
+      benefits: ['涙やけの改善', '糞尿のにおい改善', '食欲増強', '腸内環境の改善', '深い睡眠', '体臭改善'],
+    },
+  ]
+
+  return (
+    <section className="py-5 md:py-5 bg-black">
+      <div
+        className="mx-auto px-4 md:px-8 py-8 md:py-12 w-[97%] md:w-[90%]"
+        style={{
+          maxWidth: '1500px',
+          border: '2px solid #25c760',
+          borderRadius: '8px',
+        }}
+      >
+        {/* Title */}
+        <h2
+          className="text-xl md:text-5xl font-bold text-center mb-2 md:mb-4"
+          style={{ color: '#25c760' }}
+        >
+          Food Function
+        </h2>
+
+        {/* Subtitle */}
+        <p className="text-center text-white text-sm md:text-xl italic mb-4">
+          Achieve / Forever
+        </p>
+
+        <div className="w-32 md:w-48 h-1 md:h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-4 md:mt-6 mb-6 md:mb-8 opacity-80"></div>
+
+        {/* TORIKOMU / MAZEKOMU */}
+        <p className="text-center text-[#25c760] text-xs md:text-sm mb-2">
+          TORIKOMU / MAZEKOMU
+        </p>
+
+        {/* Spoon Image */}
+        <div className="flex justify-center mb-6 md:mb-10">
+          <img
+            src="/spoon.png"
+            alt="Spoon with spirulina"
+            className="h-16 md:h-24 w-auto object-contain"
+          />
+        </div>
+
+        {/* Nutrient Circles */}
+        <div className="flex justify-center items-center gap-2 md:gap-6 mb-8 md:mb-12 flex-wrap">
+          {nutrients.map((nutrient, index) => (
+            <div
+              key={index}
+              className="w-16 h-16 md:w-28 md:h-28 rounded-full flex flex-col items-center justify-center text-center"
+              style={{ backgroundColor: '#4a9d7c' }}
+            >
+              <span className="text-white text-[8px] md:text-sm font-medium leading-tight">
+                {nutrient.name}
+              </span>
+              <span className="text-white text-[8px] md:text-sm">
+                {nutrient.count}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* 48 Nutrients Title */}
+        <h3
+          className="text-lg md:text-3xl font-bold text-center mb-4 md:mb-6"
+          style={{ color: '#25c760' }}
+        >
+          48 Nutrients
+        </h3>
+
+        {/* Nutrients List */}
+        <p className="text-gray-300 text-[10px] md:text-sm text-center leading-relaxed px-2 md:px-8">
+          {nutrientsList}
+        </p>
+
+        {/* Categories Grid */}
+        <div className="grid grid-cols-2 gap-4 md:gap-8 mt-12 md:mt-16 px-2 md:px-8">
+          {categories.map((category, index) => (
+            <div key={index} className="flex items-start gap-2 md:gap-4">
+              {/* Silhouette Image */}
+              <div className="flex-shrink-0 w-16 h-20 md:w-24 md:h-32">
+                <img
+                  src={category.image}
+                  alt={category.title}
+                  className="w-full h-full object-contain"
+                  style={{ filter: 'brightness(0) saturate(100%) invert(56%) sepia(52%) saturate(405%) hue-rotate(93deg) brightness(95%) contrast(87%)' }}
+                />
+              </div>
+              {/* Text Content */}
+              <div className="flex-1">
+                <h4
+                  className="text-sm md:text-xl font-bold mb-2 md:mb-3 italic"
+                  style={{ color: '#25c760' }}
+                >
+                  {category.title}
+                </h4>
+                <ul className="space-y-0.5 md:space-y-1">
+                  {category.benefits.map((benefit, idx) => (
+                    <li
+                      key={idx}
+                      className="text-white text-[9px] md:text-sm flex items-start"
+                    >
+                      <span className="mr-1 md:mr-2" style={{ color: '#25c760' }}>●</span>
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
