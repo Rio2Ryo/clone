@@ -70,12 +70,12 @@ function CompareSlider({ beforeImage, afterImage }: { beforeImage: string; after
       />
       {/* Slider Handle */}
       <div
-        className="absolute top-1/2 w-10 h-10 bg-black rounded-full flex items-center justify-center cursor-ew-resize border-2 border-[#25c760]"
+        className="absolute top-1/2 w-10 h-10 bg-[#25c760] rounded-full flex items-center justify-center cursor-ew-resize border-2 border-black"
         style={{ left: `${sliderPosition}%`, transform: 'translate(-50%, -50%)' }}
         onMouseDown={handleMouseDown}
         onTouchStart={handleMouseDown}
       >
-        <span className="text-[#25c760] text-sm">⟷</span>
+        <span className="text-black text-sm font-bold">⟷</span>
       </div>
     </div>
   )
