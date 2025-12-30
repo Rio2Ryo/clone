@@ -72,7 +72,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-7xl mx-auto px-4 transition-all duration-1500 pt-32 md:pt-48 lg:pt-56">
+      <div className="relative z-10 text-center max-w-7xl mx-auto px-4 transition-all duration-1500 pt-40 md:pt-48 lg:pt-56">
         {/* Title Section - Single Component */}
         <div className="mb-12">
 
