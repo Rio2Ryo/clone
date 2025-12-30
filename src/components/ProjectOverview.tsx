@@ -78,7 +78,7 @@ export default function ProjectOverview() {
                 <div className="relative">
                   <div className="absolute inset-0  opacity-50"></div>
                   <div className="relative px-6 py-3">
-                    <span className="text-5xl font-black bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Ⅰ</span>
+                    <span className="text-lg md:text-5xl font-black bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Ⅰ</span>
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ we offer the following three types of Mother Vegetable products:`
                 <div className="relative">
                   <div className="absolute inset-0 opacity-50"></div>
                   <div className="relative px-6 py-3">
-                    <span className="text-5xl font-black bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Ⅱ</span>
+                    <span className="text-lg md:text-5xl font-black bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Ⅱ</span>
                   </div>
                 </div>
               </div>
