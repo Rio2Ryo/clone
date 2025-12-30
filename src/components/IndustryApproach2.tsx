@@ -56,13 +56,13 @@ export default function IndustryApproach() {
         <div className="w-32 md:w-48 h-1 md:h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-4 md:mt-6 mb-6 md:mb-12 opacity-80"></div>
 
         {/* Certification Logos */}
-        <div className="flex justify-center items-center gap-2 md:gap-10 mb-6 md:mb-12">
+        <div className="flex justify-center items-center gap-1 md:gap-10 mb-6 md:mb-12">
           {certifications.map((cert) => (
             <img
               key={cert.id}
               src={cert.src}
               alt={cert.alt}
-              className="h-10 md:h-24 w-auto object-contain"
+              className="w-[15%] md:w-auto md:h-24 object-contain"
             />
           ))}
         </div>
