@@ -1,6 +1,10 @@
 'use client'
 
+import { useLanguage } from '@/contexts/LanguageContext'
+
 export default function IndustryApproach() {
+  const { language } = useLanguage()
+
   const products = [
     {
       id: 1,
@@ -8,25 +12,31 @@ export default function IndustryApproach() {
       title: 'Achieve',
       subtitle: 'for Body',
       label: "'TORIKOMU'",
-      description: '一度に48種類の栄養摂取',
-      features: [
+      description: language === 'JP' ? '一度に48種類の栄養摂取' : '48 different nutrients at once.',
+      features: language === 'JP' ? [
         '腸内環境を改善、全身の細胞が再生',
         '便秘・睡眠改善、ダイエット効果',
+      ] : [
+        'Supports a healthy gut, Regeneration of cells throughout the body.',
+        'Helps relieve constipation, improve sleep, and aid weight management.',
       ],
-      howToUse: "1スティックを飲み物や食事に'TORIKOMU'",
+      howToUse: language === 'JP' ? "1スティックを飲み物や食事に'TORIKOMU'" : "Simply 'TORIKOMU' one capsule into your drink or meal.",
     },
     {
       id: 2,
       video: '/confidence_v2.mp4',
       title: 'Confidence',
       subtitle: 'for All Skin',
-      label: "'SURIKOMU', 'MAZEKOMU'",
-      description: '肌の治癒効果',
-      features: [
+      label: "'SURIKOMU' , 'MAZEKOMU'",
+      description: language === 'JP' ? '肌の治癒効果' : 'Skin Healing Effect',
+      features: language === 'JP' ? [
         '即効性のある肌の細胞の再生',
         'しみ、ニキビ、体臭、キズ、やけどを治癒',
+      ] : [
+        'Powerful anti-aging benefits.',
+        'Helps improve dark spots, acne, odor, and skin damage.',
       ],
-      howToUse: "直接 'SURIKOMU' または コスメに 'MAZEKOMU'",
+      howToUse: language === 'JP' ? "直接 'SURIKOMU' または コスメに 'MAZEKOMU'" : "'SURIKOMU' directly or 'MAZEKOMU' into your current cosmetics.",
     },
     {
       id: 3,
@@ -34,12 +44,15 @@ export default function IndustryApproach() {
       title: 'Forever',
       subtitle: 'for Pet',
       label: "'MAZEKOMU'",
-      description: 'ペットの健康寿命を延ばす',
-      features: [
+      description: language === 'JP' ? 'ペットの健康寿命を延ばす' : "to extend your pet's healthy life.",
+      features: language === 'JP' ? [
         '涙やけ、腸内環境を改善',
         '体臭・糞尿のにおい改善、食欲増加',
+      ] : [
+        'Supports tear stain reduction and gut health.',
+        'Helps reduce body and waste odors, boosts appetite.',
       ],
-      howToUse: "ペットフードに1スティックを'MAZEKOMU'",
+      howToUse: language === 'JP' ? "ペットフードに1スティックを'MAZEKOMU'" : "Simply 'MAZEKOMU' one capsule into your pet's food.",
     },
   ]
 
