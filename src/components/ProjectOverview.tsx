@@ -70,7 +70,7 @@ export default function ProjectOverview() {
         </div>
 
         {/* Main Content - Single Block */}
-        <div className="bg-gray-900/50 backdrop-blur-md border border-green-500/20 rounded-xl p-8 mb-16">
+        <div className="p-8 mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Section - 01 */}
             <div className="flex flex-col">
@@ -84,7 +84,7 @@ export default function ProjectOverview() {
               </div>
               
               {/* 地球最初の生命体とは */}
-              <div className="p-6 bg-green-500/10 border border-green-500/30 rounded-lg flex-grow flex flex-col">
+              <div className="p-6 flex-grow flex flex-col">
                 <div className="flex-grow">
                   <div className="flex justify-center my-6">
                     <div>
