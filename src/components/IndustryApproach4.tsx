@@ -145,11 +145,11 @@ export default function IndustryApproach() {
   ]
 
   const nutrients = [
-    { name: 'ミネラル', count: '9種類' },
-    { name: 'ビタミン', count: '10種類' },
-    { name: 'アミノ酸', count: '18種類' },
-    { name: '脂肪酸', count: '3種類' },
-    { name: 'その他機能性成分', nameMobile: ['その他機能性', '成分'], count: '9種類' },
+    { name: 'しみ', count: 'そばかす' },
+    { name: 'ニキビ', count: 'ニキビ跡' },
+    { name: 'キズ', count: 'キズ跡、やけど跡' },
+    { name: 'ニオイ', count: '顔・首・脇・Vゾーン・足' },
+    { name: 'ツヤ・清潔感', nameMobile: ['ツヤ・清潔感', '自然な'], count: '自然なトーンアップ' },
   ]
 
   const nutrientsList = 'カリウム・ナトリウム・マグネシウム・カルシウム・リン・鉄・マンガン・亜鉛・銅・ビタミンA・B1・B2・B3・B5・B6・B9・C・E・K・トリプトファン・スレオニン・ロイシン・イソロイシン・リシン・メチオニン・フェニルアラニン・バリン・ヒスチジン・アルギニン・システイン・チロシン・アラニン・アスパラギン酸・グルタミン酸・セリン・グリシン・プロリン・飽和脂肪酸・オメガ3脂肪酸・オメガ6脂肪酸・C-フィコシアニン・クロロフィルa・総カロテノイド・核酸・スピルラン・グリコーゲン様多糖・β-グルカン様多糖・セルロース'
@@ -202,25 +202,25 @@ export default function IndustryApproach() {
           className="text-xl md:text-5xl font-bold text-center mb-2 md:mb-4"
           style={{ color: '#25c760' }}
         >
-          Food Function
+         Cosmetic Function
         </h2>
 
         {/* Subtitle */}
         <p className="text-center text-white text-base md:text-xl mb-4">
-          Achieve / Forever
+          Confidence
         </p>
 
         <div className="w-32 md:w-48 h-1 md:h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-4 md:mt-6 mb-6 md:mb-8 opacity-80"></div>
 
         {/* TORIKOMU / MAZEKOMU */}
         <p className="text-center text-red-600 text-xs md:text-sm mb-2 font-semibold">
-          TORIKOMU / MAZEKOMU
+          SURIKOMU / MAZEKOMU
         </p>
 
         {/* Food Video */}
         <div className="flex justify-center">
           <video
-            src="/food_video.mov"
+            src="/cosmetic_video.mov"
             autoPlay
             loop
             muted
@@ -282,18 +282,7 @@ export default function IndustryApproach() {
             ))}
           </div>
 
-          {/* 48 Nutrients Title */}
-          <h3
-            className="text-lg md:text-3xl font-bold text-center mb-4 md:mb-6"
-            style={{ color: '#25c760' }}
-          >
-            48 Nutrients
-          </h3>
-
-          {/* Nutrients List */}
-          <p className="text-gray-300 text-[10px] md:text-base text-center leading-relaxed">
-            {nutrientsList}
-          </p>
+        
         </div>
 
         {/* Skin Section */}
@@ -327,7 +316,7 @@ export default function IndustryApproach() {
           <div className="flex justify-center">
             <button
               onClick={() => setIsPopupOpen(true)}
-              className="px-8 py-3 border-2 border-[#25c760] text-[#25c760] rounded-lg hover:bg-[#25c760] hover:text-black transition-all duration-300 flex items-center gap-2"
+              className="px-8 py-3 border-2 border-[#25c760] text-[#25c760] rounded-full hover:bg-[#25c760] hover:text-black transition-all duration-300 flex items-center gap-2"
             >
               <span>✓</span>
               <span>Before & After</span>
