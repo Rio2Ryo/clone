@@ -55,17 +55,21 @@ export default function ProjectOverview() {
             </p>
 
             {/* Mobile View */}
-            <p className="block md:hidden leading-[2] whitespace-pre-line text-[10px]">
+            <div className="block md:hidden leading-[2] text-[10px] text-center px-4">
               {language === 'JP' ? (
                 <>
-                  MOTHER VEGETABLE PROJECTは{'\n'}2つのオンリーワン事業を中心として地球とすべての生命の回復を目指す世界唯一のプロジェクトです。{'\n\n'}このプロセスにおいて、各施設は24時間365日CO<sub>2</sub>を吸収し酸素を生成することで大気を浄化します。{'\n'}それと同時に生成されるマザーベジタブル製品および魚貝類の養殖業により、人間と生物の健康向上に貢献します。{'\n\n'}またその施設を世界各地に展開することで、さらに8つの産業分野に発展することが可能です。
+                  <p className="mb-4">MOTHER VEGETABLE PROJECTは<br />2つのオンリーワン事業を中心として地球とすべての生命の回復を目<br />指す世界唯一のプロジェクトです。</p>
+                  <p className="mb-4">このプロセスにおいて、各施設は24時間365日CO<sub>2</sub>を吸収し酸素を生成<br />することで大気を浄化します。<br />それと同時に生成されるマザーベジタブル製品および魚貝類の養殖業<br />により、人間と生物の健康向上に貢献します。</p>
+                  <p>またその施設を世界各地に展開することで、さらに8つの産業分野に<br />発展することが可能です。</p>
                 </>
               ) : (
                 <>
-                  The MOTHER VEGETABLE PROJECT is{'\n'}the world&apos;s only project that aims to restore{'\n'}the Earth and all life,{'\n'}centered around two one-of-a-kind businesses.{'\n\n'}In this process,{'\n'}each facility purifies the atmosphere{'\n'}by absorbing CO<sub>2</sub> and generating oxygen{'\n'}24 hours a day, 365 days a year,{'\n'}while simultaneously contributing to{'\n'}improving the health of humans{'\n'}and living organisms through{'\n'}Mother Vegetable products{'\n'}and the aquaculture of fish and shellfish.{'\n\n'}Furthermore, by expanding{'\n'}these facilities around the world,{'\n'}it will develop into{'\n'}eight additional industrial sectors.
+                  <p className="mb-4">The MOTHER VEGETABLE PROJECT is the world&apos;s only project that aims to restore the Earth and all life, centered around two one-of-a-kind businesses.</p>
+                  <p className="mb-4">In this process, each facility purifies the atmosphere by absorbing CO<sub>2</sub> and generating oxygen 24 hours a day, 365 days a year, while simultaneously contributing to improving the health of humans and living organisms through Mother Vegetable products and the aquaculture of fish and shellfish.</p>
+                  <p>Furthermore, by expanding these facilities around the world, it will develop into eight additional industrial sectors.</p>
                 </>
               )}
-            </p>
+            </div>
           </div>
         </div>
 
