@@ -6,7 +6,7 @@ export default function IndustryApproach() {
     { name: 'ビタミン', count: '10種類' },
     { name: 'アミノ酸', count: '18種類' },
     { name: '脂肪酸', count: '3種類' },
-    { name: 'その他機能性成分', count: '9種類' },
+    { name: 'その他機能性成分', nameMobile: ['その他機能性', '成分'], count: '9種類' },
   ]
 
   const nutrientsList = 'カリウム・ナトリウム・マグネシウム・カルシウム・リン・鉄・マンガン・亜鉛・銅・ビタミンA・B1・B2・B3・B5・B6・B9・C・E・K・トリプトファン・スレオニン・ロイシン・イソロイシン・リシン・メチオニン・フェニルアラニン・バリン・ヒスチジン・アルギニン・システイン・チロシン・アラニン・アスパラギン酸・グルタミン酸・セリン・グリシン・プロリン・飽和脂肪酸・オメガ3脂肪酸・オメガ6脂肪酸・C-フィコシアニン・クロロフィルa・総カロテノイド・核酸・スピルラン・グリコーゲン様多糖・β-グルカン様多糖・セルロース'
@@ -91,7 +91,7 @@ export default function IndustryApproach() {
           <img
             src="/bracket_v2.png"
             alt="Bracket"
-            className="w-[80%] md:w-[60%] max-w-2xl object-contain"
+            className="w-full max-w-2xl object-contain"
           />
         </div>
 
@@ -102,15 +102,39 @@ export default function IndustryApproach() {
             {nutrients.map((nutrient, index) => (
               <div
                 key={index}
-                className="w-14 h-14 md:w-32 md:h-32 rounded-full flex flex-col items-center justify-center text-center"
+                className="w-16 h-16 md:w-32 md:h-32 rounded-full flex flex-col items-center justify-center text-center"
                 style={{ backgroundColor: '#4a9d7c' }}
               >
-                <span className="text-white text-[8px] md:text-base font-medium leading-tight">
-                  {nutrient.name}
-                </span>
-                <span className="text-white text-[8px] md:text-base">
-                  {nutrient.count}
-                </span>
+                {nutrient.nameMobile ? (
+                  <>
+                    {/* Mobile: 3 lines */}
+                    <span className="text-white text-[8px] font-medium leading-tight md:hidden">
+                      {nutrient.nameMobile[0]}
+                    </span>
+                    <span className="text-white text-[8px] font-medium leading-tight md:hidden">
+                      {nutrient.nameMobile[1]}
+                    </span>
+                    <span className="text-white text-[8px] md:hidden">
+                      {nutrient.count}
+                    </span>
+                    {/* Desktop: 2 lines */}
+                    <span className="text-white text-base font-medium leading-tight hidden md:block">
+                      {nutrient.name}
+                    </span>
+                    <span className="text-white text-base hidden md:block">
+                      {nutrient.count}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-white text-[8px] md:text-base font-medium leading-tight">
+                      {nutrient.name}
+                    </span>
+                    <span className="text-white text-[8px] md:text-base">
+                      {nutrient.count}
+                    </span>
+                  </>
+                )}
               </div>
             ))}
           </div>
@@ -130,7 +154,7 @@ export default function IndustryApproach() {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-12 md:mt-16 px-4 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-12 md:mt-16 px-0 md:px-12">
           {categories.map((category, index) => (
             <div key={index} className="flex items-start gap-3 md:gap-6">
               {/* Silhouette Image */}
