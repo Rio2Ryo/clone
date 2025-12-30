@@ -151,7 +151,7 @@ export default function IndustryApproach() {
                   {category.title}
                 </h4>
                 <div className="w-full h-0.5 bg-gradient-to-r from-green-500 to-transparent mb-3 md:mb-4"></div>
-                <ul className="space-y-1 md:space-y-2">
+                <ul className="space-y-0.5 md:space-y-1">
                   {category.benefits.map((benefit, idx) => (
                     <li
                       key={idx}
